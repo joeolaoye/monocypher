@@ -26,10 +26,3 @@ def do_decryption(s):
             if CH[j] == s[i]:
                 p1.append(P[j])
     return ''.join(p1)
-
-
-var = "Sanfoundry"
-devar = do_encryption(var)
-
-print("Encrypted text:", do_encryption(var))
-print("Decrypted text:", do_decryption(devar))
