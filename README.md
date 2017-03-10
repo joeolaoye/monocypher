@@ -7,3 +7,4 @@ That's all and thank you for reading.
 1. Allen G. Black (https://github.com/allengblack) submitted Python3 version of the same cyhper.
 2. Mykeels (https://github.com/mykeels) submitted the C-Sharp version of the same cypher.
 3. Neddinn (https://github.com/neddinn) submitted the golang version of the same cypher.
+4. Shalvah (https://github.com/shalvah) submitted the PHP version of the same cypher.
