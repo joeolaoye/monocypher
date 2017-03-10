@@ -4,4 +4,6 @@ If you can write this same cypher in your language of choice, please do so and o
 That's all and thank you for reading.
 
 # Contributors(!Awesome!)
-Allen G. Black (https://github.com/allengblack) submitted Python3 verson of the same cyhper.  
+Allen G. Black (https://github.com/allengblack) submitted Python3 version of the same cyhper.
+Mykeels (https://github.com/mykeels) submitted the C-Sharp version of the same cypher.
+Neddinn (https://github.com/neddinn) submitted the golang version of the same cypher.
