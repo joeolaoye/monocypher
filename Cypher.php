@@ -36,7 +36,7 @@ class Cypher
         $s = preg_replace("/[^a-z]/i", "", $s);
 
         $s = str_split($s);
-        foreach ($s as $i => &$c) {
+        foreach ($s as &$c) {
             $c = self::$enc[$c];
         }
         unset($c);
