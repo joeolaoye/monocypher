@@ -37,7 +37,7 @@ class Cypher
 
         $s = str_split($s);
         foreach ($s as $i => &$c) {
-            $c = self::$enc[$i];
+            $c = self::$enc[$c];
         }
         unset($c);
         return implode("", $s);
