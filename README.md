@@ -5,6 +5,8 @@ That's all and thank you for reading.
 
 # Contributors(!Awesome!)
 1. Allen G. Black (https://github.com/allengblack) submitted Python3 version of the same cyhper.
-2. Mykeels (https://github.com/mykeels) submitted the C-Sharp version of the same cypher.
+2. Mykeels (https://github.com/mykeels) submitted the C-Sharp version of the same cypher and keeps updating it, top man.
 3. Neddinn (https://github.com/neddinn) submitted the golang version of the same cypher.
 4. Shalvah (https://github.com/shalvah) submitted the PHP version of the same cypher.
+5. Mojo Blanco (https://github.com/mojoblanco) submitted the Visual Basic version of the same cypher.
+6. Promhize (https://github.com/promhize) submitted the Javascript version of the same cypher.
