@@ -10,3 +10,4 @@ That's all and thank you for reading.
 4. Shalvah (https://github.com/shalvah) submitted the PHP version of the same cypher.
 5. Mojo Blanco (https://github.com/mojoblanco) submitted the Visual Basic version of the same cypher.
 6. Promhize (https://github.com/promhize) submitted the Javascript version of the same cypher.
+7. UK (https://github.com/ukchukx) submitted the Elixir(!!!!) version of the same cypher and touched up the Java version to Java 8.
