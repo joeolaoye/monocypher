@@ -17,7 +17,7 @@ var sub = [ 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O',
 function encrypt (s, ns) {
 
     var fs = ns || "";
-    return s.length > 0 ? encrypt(s.substr(1, s.length), fs += sub[real.indexOf(s[0])]) : fs.replace(/undefined/g, "");
+    return s.length > 0 ? encrypt(s.substr(1, s.length), fs += sub[real.indexOf(s[0].toLowerCase())]) : fs.replace(/undefined/g, "");
 
 }
 
