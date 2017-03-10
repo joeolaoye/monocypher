@@ -33,21 +33,24 @@ class Cypher
 
     public static function doEncryption($s)
     {
-        //try to remove some special characters from the string as this cypher is not equipped for symbols
-        $s = preg_replace("/[^a-z]/gi", "", $s);
+        $s = preg_replace("/[^a-z]/i", "", $s);
+
+        $s = str_split($s);
         foreach ($s as $i => &$c) {
             $c = self::$enc[$i];
         }
-        return $s;
+        unset($c);
+        return implode("", $s);
     }
 
     public static function doDecryption($s)
     {
-
+        $s = str_split($s);
         foreach ($s as &$c) {
             $key = array_search($c, self::$enc);
             $c = $key;
         }
-        return $s;
+        unset($c);
+        return implode("", $s);
     }
 }
