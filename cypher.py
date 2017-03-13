@@ -1,28 +1,27 @@
 
 import re
 
-P = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i',
-     'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+encoding = {
+    'a': 'Q', 'b': 'W', 'c': 'E', 'd': 'R', 'e': 'T', 'f': 'Y', 'g': 'U', 'h': 'I',
+    'i': 'O', 'j': 'P', 'k': 'A', 'l': 'S', 'm': 'D', 'n': 'F', 'o': 'G', 'p': 'H',
+    'q': 'J', 'r': 'K', 's': 'L', 't': 'Z', 'u': 'X', 'v': 'C', 'w': 'V', 'x': 'B',
+    'y': 'N', 'z': 'M'
+}
 
-CH = ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O',
-      'P', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Z', 'X', 'C', 'V', 'B', 'N', 'M']
 
 def do_encryption(s):
     s2 = re.sub('[^A-Za-z0-9]+', '', s)
     c = []
 
     for i in range(len(s2)):
-        for j in range(26):
-            if s2[i].lower() == P[j]:
-                c.append(CH[j])
-                break
+        c.append(encoding[s2[i].lower()])
     return ''.join(c)
+
 
 def do_decryption(s):
     p1 = []
-
     for i in range(len(s)):
-        for j in range(26):
-            if CH[j] == s[i]:
-                p1.append(P[j])
+        for k in encoding:
+            if encoding[k] == s[i]:
+                p1.append(k)
     return ''.join(p1)
