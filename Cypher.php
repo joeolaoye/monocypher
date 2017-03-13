@@ -2,7 +2,7 @@
 
 class Cypher
 {
-    private static $enc = array(
+    private static $enc = [
         'a' => 'Q',
         'b' => 'W',
         'c' => 'E',
@@ -29,8 +29,14 @@ class Cypher
         'x' => 'B',
         'y' => 'N',
         'z' => 'M'
-    );
-
+    ];
+    
+    /**
+       @method doEncryption
+       @var $s Input (string)
+       Encrypts a string and replace with a corresponding Cypher value
+       @return String
+    */
     public static function doEncryption($s)
     {
         $s = preg_replace("/[^a-z]/i", "", $s);
@@ -42,7 +48,13 @@ class Cypher
         unset($c);
         return implode("", $s);
     }
-
+    
+     /**
+       @method doDeccryption
+       @var $s Input (encrypted string)
+       Decrypts a string
+       @return String
+    */
     public static function doDecryption($s)
     {
         $s = str_split($s);
